@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mlt SYSTEM "mlt-xml.dtd">
+<!--suppress ALL -->
+<mlt>
+    <profile frame_rate_den="1"
+             frame_rate_num="30"
+             height="1080"
+             progressive="0"
+             sample_aspect_den="1"
+             sample_aspect_num="1"
+             width="1920"  />
+    <producer id="logo" in="0" out="150">
+        <property name="mlt_service" value="qimage" />
+        <property name="resource" value="ibm-interconnect.jpg" />
+    </producer>
+    <consumer>
+        <property name="mlt_service" value="avformat" />
+        <property name="resource" value="movie.mp4" />
+    </consumer>
+</mlt>
